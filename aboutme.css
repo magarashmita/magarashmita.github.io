@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;500&family=M+PLUS+1p:wght@100;400&family=Poppins:wght@200;400;500&display=swap');
+
+
+body{
+    background-attachment: scroll;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+h1{
+    text-align: center;
+    letter-spacing: 2px;
+    color:teal;
+    line-height: 0%;
+}
+
+h6, h5{
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+p{
+    line-height: 1.5;
+}
+
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style:outset;
+  border-width: 2px;
+} 
+
+table {
+    border-spacing: 30px;
+    width: 100%;
+  }
+tr{
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 15px;    
+  }
+td {
+    background-color:blanchedalmond;
+  }
+th{
+    background-color: teal;
+    color: white;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+/* Column container */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+/* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  .side {
+    background-size: cover;
+    background-image: url('images/Ashmitame.jpg');
+    min-height: 100%;
+    flex: 30%; /* Set the width of the sidebar */
+    padding: 20px; /* Some padding */
+  }
+
+ /* Main column */
+ .main {
+    flex: 70%; /* Set the width of the main content */
+    background-color:whitesmoke; /* White background color */
+    padding: 20px; /* Some padding */
+  }
+
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {
+      flex-direction: column;
+    }
+  }
